@@ -1,26 +1,28 @@
-const EmployeesD = require('./lib/EmployeesD');
-const connection = require('./lib/connDB');
+const EmpData = require('./lib/EmpData');
+const connection = require('./lib/dbConn');
 const cTable = require('console.table');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
-const view = require('/lib/viewFunction');
-const add = require("./lib/functions");
-const del = require('./lib/delFunc');
-const update = require('./lib/updFuncs');
+const view = require('./lib/viewFuncs');
+const add = require('./lib/addFuncs');
+const del = require('./lib/delFuncs');
+const update = require('./lib/updateFuncs');
 
-// use inquire to prompt user for information
+
+// Use inquirer to prompt user for information
 const promptUser = (questions) => {
     return inquirer.prompt(questions);
 };
 
-// function to exit the application
+
+// Function to exit the application
 const exitApp = () => {
-    console.log('goodbye');
+    console.log('Goodbye!');
     connection.end();
     process.exit();
 };
 
-// object to hold the task functions to fire from inquirer prompt
+// Object to hold the task functions to fire from inquirer prompt
 const actionFunctions = {
     'View All Employees': view.viewEmployees,
     'View All Employees by Department': view.viewEmployeesByDept,
@@ -80,7 +82,7 @@ const init = async () => {
 
 // Displays start graphic and starts the init function
 const start = () => {
-    figlet('     E - M - S', {
+    figlet('     E -T', {
         font: 'Big'
     }, (err, data) => {
         if (err) {
@@ -89,7 +91,7 @@ const start = () => {
         console.log("\n")
         console.log(data);
         console.log("       ****************************************")
-        console.log("\n                    Welcome to the \n             Employee Management System!")
+        console.log("\n                    Welcome to the \n             Employee Tracker!")
         console.log("\n       ****************************************")
         init();
     })
@@ -97,4 +99,3 @@ const start = () => {
 }
 
 start();
-
