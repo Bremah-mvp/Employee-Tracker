@@ -1,5 +1,5 @@
 {
-  "name": "employee-management-system",
+  "name": "employee-tracker",
   "version": "1.0.0",
   "description": "A command line application to view and manage company employees.",
   "main": "app.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiffany-brand/employee-management-system.git"
+    "url": "git+https://github.com/Bremah-mvp/Employee-Tracker.git"
   },
   "author": "Mvp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tiffany-brand/employee-management-system/issues"
+    "url": "https://github.com/Bremah-mvp/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/tiffany-brand/employee-management-system#readme",
+  "homepage": "https://github.com/Bremah-mvp/Employee-Tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
     "figlet": "^1.5.0",
