@@ -65,3 +65,36 @@ const action = [
     }
 ];
 
+// Init prompt user for task to complete
+const init = async () => {
+    try {
+        console.log("\n------------------------\n")
+        const actionChoice = await promptUser(action);
+        console.log("\n------------------------\n")
+        await actionFunctions[actionChoice.task]();
+        init();
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+// Displays start graphic and starts the init function
+const start = () => {
+    figlet('     E - M - S', {
+        font: 'Big'
+    }, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        console.log("\n")
+        console.log(data);
+        console.log("       ****************************************")
+        console.log("\n                    Welcome to the \n             Employee Management System!")
+        console.log("\n       ****************************************")
+        init();
+    })
+
+}
+
+start();
+
