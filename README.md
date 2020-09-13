@@ -51,7 +51,7 @@ Used figlet to add some styling font to my console for example the welcome to th
 
 
 Screenshot of the appliaction in use:
-[!picture](https://github.com/Bremah-mvp/Employee-Tracker/blob/master/assets/1.png)
+![picture](https://github.com/Bremah-mvp/Employee-Tracker/blob/master/assets/1.png)
 
 
 
