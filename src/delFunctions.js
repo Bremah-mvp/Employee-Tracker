@@ -33,7 +33,7 @@ const delEmployee = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which employee would you like to remove?"
+                message: "Select the employee  you would like to delete?"
             },
 
         ]);
@@ -46,7 +46,7 @@ const delEmployee = async () => {
                 name: "yN",
                 type: "confirm",
                 default: false,
-                message: `\nAre you sure you want to remove ${empToRemove[0].first_name} ${empToRemove[0].last_name}? THIS CANNOT BE UNDONE!`
+                message: `\nAre you sure you want to delete ${empToRemove[0].first_name} ${empToRemove[0].last_name}? THIS CANNOT BE UNDONE!`
             }
         ]);
         if (confirm.yN) {
@@ -60,7 +60,7 @@ const delEmployee = async () => {
             })
             // delete employee from db
             await empData.remove("employee", deleteEmp.empId)
-            console.log(`\n${empToRemove[0].first_name} ${empToRemove[0].last_name} has been removed.`)
+            console.log(`\n${empToRemove[0].first_name} ${empToRemove[0].last_name} has been deleted.`)
         }
 
 
@@ -91,7 +91,7 @@ const delDepartment = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which department would you like to remove?"
+                message: "Select the department you would like to delete?"
             },
 
         ]);
@@ -105,7 +105,7 @@ const delDepartment = async () => {
             deptRoles.forEach((role) => {
                 console.log(role.title)
             })
-            console.log("If you remove this department, all roles and employees in this department WILL ALSO BE REMOVED!")
+            console.log("If you delete this department, all roles and employees in this department WILL ALSO BE DELETED!")
             console.log("\n------------------------\n")
         }
         // query to get the department name
@@ -116,13 +116,13 @@ const delDepartment = async () => {
                 name: "yN",
                 type: "confirm",
                 default: false,
-                message: `\nAre you sure you want to remove ${removeDept[0].department}? THIS CANNOT BE UNDONE!`
+                message: `\nAre you sure you want to DELETED ${removeDept[0].department}? THIS IS IRRIVERSIBLE!`
             }
         ]);
         if (confirm.yN) {
             // if yes, delete the department from the db
             await empData.remove("department", remove.deptId)
-            console.log(`\n${removeDept[0].department} department has been removed.`)
+            console.log(`\n${removeDept[0].department} department deleted.`)
 
         }
 
@@ -152,7 +152,7 @@ const delRole = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which role would you like to remove?"
+                message: "Slect the role you would like to remove?"
             },
 
         ]);
@@ -166,7 +166,7 @@ const delRole = async () => {
             roleEmps.forEach((emp) => {
                 console.log(`${emp.first_name} ${emp.last_name}`)
             })
-            console.log("If you remove this role, all employees assigned this role WILL ALSO BE REMOVED!")
+            console.log("If you delete this role, all employees assigned this role WILL ALSO BE DELETED!")
             console.log("\n------------------------\n")
         }
 
@@ -178,13 +178,13 @@ const delRole = async () => {
                 name: "yN",
                 type: "confirm",
                 default: false,
-                message: `\nAre you sure you want to remove ${removeRole[0].title}? THIS CANNOT BE UNDONE!`
+                message: `\nAre you sure you want to delete ${removeRole[0].title}? THIS IS IRRIVERSIBLE!`
             }
         ]);
         // if yes, delete the role from the db
         if (confirm.yN) {
             await empData.remove("role", remove.roleId)
-            console.log(`\n${removeRole[0].title} role has been removed.`)
+            console.log(`\n${removeRole[0].title} role deleted.`)
 
         }
 

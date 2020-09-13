@@ -64,7 +64,7 @@ const viewEmployeesByDept = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which department's employees would you like to view'?"
+                message: "Select the department's employees you would like to view'?"
             },
 
         ]);
@@ -97,7 +97,7 @@ const viewEmployeesByMgr = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which manager's employees would you like to view'?"
+                message: "Select the manager's employees you would like to view'?"
             },
 
         ]);
@@ -139,7 +139,7 @@ const viewBudgetByDept = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which department's total utilized budget would you like to view'?"
+                message: "Select the department's total utilized budget you would like to view'?"
             },
 
         ]);

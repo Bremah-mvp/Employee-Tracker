@@ -17,7 +17,7 @@ const promptUser = (questions) => {
 
 // Function to exit the application
 const exitApp = () => {
-    console.log('Goodbye!');
+    console.log('Bye bye!');
     connection.end();
     process.exit();
 };

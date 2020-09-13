@@ -34,7 +34,7 @@ const updateEmpRole = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which employee's role would you like to update?"
+                message: "Select the  employee's role you would like to update?"
             },
 
         ]);
@@ -55,7 +55,7 @@ const updateEmpRole = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Choose the employee's new role:"
+                message: "Select the employee's new role:"
             },
         ]);
 
@@ -92,7 +92,7 @@ const updateEmpMgr = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Which employee's manager would you like to update?"
+                message: "Select the employee's manager you would like to update?"
             },
 
         ]);
@@ -118,7 +118,7 @@ const updateEmpMgr = async () => {
                     })
                     return choiceArray;
                 },
-                message: "Choose the employee's new manager:"
+                message: "Select the employee's new manager:"
             },
         ]);
 
