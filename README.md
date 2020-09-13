@@ -50,11 +50,14 @@ Used figlet to add some styling font to my console for example the welcome to th
 
 
 
-Screenshots
+Screenshot of the appliaction in use:
+[!picture](https://github.com/Bremah-mvp/Employee-Tracker/blob/master/assets/1.png)
 
 
-Demonstration
-View a complete video demonstration of the application:
+
+Demonstration:
+
+View a complete video demonstration of the application: https://drive.google.com/file/d/1J0aNvyFVCB9HycDsJzA7oa36Emyz7wqM/view
 
 
 Installation
@@ -64,9 +67,8 @@ npm i
 
 Then, build and seed the database with the files in the sql folder.
 
-
-
 Usage
+
 After downloading the files and installing dependencies, run
 
 node app.js
@@ -74,4 +76,7 @@ node app.js
 License
 This repository is licensed under the MIT license.
 
-Questions
+Questions:
+
+For questions u can always email me at mvpbremah@gmail.com and follow my Github:https://github.com/Bremah-mvp 
+for more projects to come.
