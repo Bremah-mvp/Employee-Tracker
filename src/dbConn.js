@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 
     // Password
     password: 'Bremen12345$',
-    database: 'employee_msdb'
+    database: 'employee_msDB'
 });
 
 // open the MySQL connection
