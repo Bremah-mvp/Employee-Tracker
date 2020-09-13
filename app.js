@@ -82,7 +82,7 @@ const init = async () => {
 
 // Displays start graphic and starts the init function
 const start = () => {
-    figlet('     E - T', {
+    figlet(' E - T', {
         font: 'Big'
     }, (err, data) => {
         if (err) {
