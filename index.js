@@ -1,5 +1,5 @@
 const EmpData = require('./src/EmpData');
-const connection = require('./src/dbConnection');
+const connection = require('./src/dbConn');
 const cTable = require('console.table');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
