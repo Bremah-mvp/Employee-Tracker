@@ -91,7 +91,7 @@ const start = () => {
         console.log("\n")
         console.log(data);
         console.log("       ****************************************")
-        console.log("\n                    Welcome to the \n             Employee Tracker!")
+        console.log("\n                    Welcome to the \n             Employee Tracker Application!")
         console.log("\n       ****************************************")
         init();
     })
