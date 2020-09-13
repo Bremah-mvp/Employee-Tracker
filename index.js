@@ -1,12 +1,12 @@
-const EmpData = require('./lib/EmpData');
-const connection = require('./lib/dbConn');
+const EmpData = require('./src/EmpData');
+const connection = require('./src/dbConnection');
 const cTable = require('console.table');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
-const view = require('./lib/viewFuncs');
-const add = require('./lib/addFuncs');
-const del = require('./lib/delFuncs');
-const update = require('./lib/updateFuncs');
+const view = require('./src/viewFunctions');
+const add = require('./src/addFunctions');
+const del = require('./src/delFunctions');
+const update = require('./src/updateFunctions');
 
 
 // Use inquirer to prompt user for information
