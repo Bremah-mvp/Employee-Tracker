@@ -1,4 +1,4 @@
-INSERT INTO employeemgt (first_name, last_name, role_id, manager)
+INSERT INTO employeemgt_DB (first_name, last_name, role_id, manager)
 VALUES ("Bremah", "Bremen", 3, NULL), ("Zoey", "Trinity", 4, 1), ("Frankie", "Semp", 6, NULL), ("Babie", "Suzie", 2, NULL), ("Jackie", "Nanyo", 1, 4);
 
 INSERT INTO role (title, salary, department_id)
