@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS employeemgt_DB;
+DROP DATABASE IF EXISTS employee_msDB;
 
-CREATE DATABASE employeemgt_DB;
+CREATE DATABASE employee_msDB;
 
-USE employeemgt_DB;
+USE employee_msDB;
 
 CREATE TABLE department (
   id INT NOT NULL AUTO_INCREMENT,
@@ -29,4 +29,3 @@ CREATE TABLE employee (
   FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE,
   FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE CASCADE
 );
-
